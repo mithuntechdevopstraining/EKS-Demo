@@ -9,7 +9,6 @@ terraform {
   backend "s3" {
     bucket = "mithuntech-terraform-state-backend-bucket"
     region = "ap-south-1"
-    profile = "terraform"
     dynamodb_table = "terraform-state-locking"
   }
 }
